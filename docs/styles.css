@@ -52,3 +52,12 @@ header, footer{
     text-align: center;
 }
 
+.lateral{
+    background: radial-gradient(
+        circle at 50% 100%,
+        #454 3%,
+        #688 30%,
+        #234 62%,
+        #674 85%    ) ;
+}
+
