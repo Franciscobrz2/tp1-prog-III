@@ -1,3 +1,17 @@
+<!-- Crear un repositorio en su cuenta de GitHub, de tipo GitHub Pages, que contenga una pagina web estática (solo html y css) que sirva de presentación personal, curriculum, portfolio, etc.
+
+Criterio de evaluación:
+
+Aprobar (6 o 7):
++ Repositorio con al menos 10 (diez) commits
++ HTML: emplear elementos h1, p, span, div, ul, ol, etc.
++ CSS: selectores de elementos, id o clase.
+
+Promocion (8, 9 o 10):
++ Repositorio con al menos 15 (quince) commits.
++ HTML: páginas múltiples empleando elementos img, a, table.
++ CSS: selectores "elemento elemento" y "elemento, elemento". -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,20 +26,64 @@
             <div class="logo">
                 <img src="image.png" alt="image">
             </div>
-            <h1>Pagina Web</h1>
+            <h1>Instalacion física de una red</h1>
         </div>
     </header>
 
     <main class="contenedor-principal">
-        <section class="contenido">
-            <h2>Titulo</h2>
-            <p>parrafos</p>
+        <section class="contenido" >
+            <h2><strong >1. Los medios de transmisión</strong></h2>
+            <p>Nos ocuparemos en esta unidad del nivel físico de la red, es decir, de las funciones 
+                y  especificaciones de la primera capa del modelo de referencia OSI. Sin embargo, la 
+                instalación de red no solo implica cables y conectores. La red debe extenderse por  la 
+                instalación de una vivienda o una oficina, lo que hace que el despliegue del sistema  de cableado
+                sea más complejo que la simple confección de los cables por donde viajará la señal de red.  El medio
+                de transmisión es el soporte físico que facilita el transporte de la información  y supone una parte 
+                fundamental en la comunicación de datos. La calidad de la transmisión dependerá de sus características 
+                físicas, mecánicas, eléctricas, etc.  El transporte, según hemos visto, puede ser mecánico, eléctrico, 
+                óptico, electromagnético, etc. El medio debe ser adecuado para la transmisión de la señal física con 
+                objeto de  producir la conexión y la comunicación entre dos dispositivos.
+            </p>
+            <h3><strong>1.1. Los cables de pares y metálicos </strong></h3>
+            <p>
+            Vamos a incluir en este apartado todos los medios de transmisión que utilizan canales  conductores metálicos para la transmisión de la señal, y que están sujetos tanto a la ley  de Ohm, como a las leyes fundamentales que rigen el electromagnetismo.  Los cables de pares están formados por pares de filamentos metálicos y constituyen el  modo más simple y económico de todos los medios de transmisión. Sin embargo, presentan algunos inconvenientes: cuando se sobrepasan ciertas longitudes, hay que acudir al  uso de repetidores para restablecer el nivel eléctrico de la señal.  Tanto la transmisión como la recepción utilizan un par de conductores que, si no  están apantallados, son muy sensibles a interferencias y diafonías producidas por  la inducción electromagnética de unos conductores en otros (motivo por el que en  ocasiones percibimos conversaciones telefónicas ajenas en nuestro teléfono).  Un modo de subsanar estas interferencias consiste en trenzar los pares de modo que las  intensidades de transmisión y recepción anulen las perturbaciones electromagnéticas  sobre otros conductores próximos. Esta es la razón por la que este tipo de cables se  llaman cables de pares trenzados. Existen fundamentalmente dos tipos:
+
+            </p>
+            <table border="5">
+    
+                <tr>
+                    <td><img src="UTP.png" alt=""></td>
+                    <td class="derecha">UTP son las siglas de Unshielded Twisted Pair. Es un cable de pares trenzado  y sin recubrimiento metálico externo, de modo que es sensible a las interferencias.  Es importante guardar la numeración de los pares, ya que de lo contrario el efecto  del trenzado no será efi caz disminuyendo sensiblemente o incluso impidiendo  la capacidad de transmisión. Es un cable barato, fl exible y sencillo de instalar.</td>
+                    
+                </tr>
+                <tr>
+                    <td><img src="STP.png" alt=""></td>
+                    <td class="derecha">STP son las siglas de Shielded Twisted Pair. Este cable es semejante al UTP pero  se le añade un recubrimiento metálico para evitar las interferencias externas. Este  recubrimiento debe ser conectado a la tierra de la instalación. Por tanto, es un cable  más protegido, pero menos fl exible que el UTP. El sistema de trenzado es idéntico  al del cable UTP.</td>
+                </tr>
+            </table>
+            <p>
+                Obviamente, el cable STP tiene más ventajas eléctricas que el cable UTP por lo que,  en principio, siempre se tendría que elegir STP en vez de UTP, sin embargo, la falta de  flexibilidad originada por su rigidez hace que solo se utilice en donde realmente hace  falta: en entornos eléctricamente hostiles.
+            </p>
+            <br>
+            <p>
+                •En los cables de pares hay que distinguir dos clasificaciones: 
+                Primera clasificación: las categorías. Cada categoría especifica unas 
+                características  eléctricas para el cable: atenuación, capacidad de la línea
+                e impedancia. Las categorías 3 a 5, que soportan frecuencias de 10, 20 y 100 MHz
+                respectivamente, empiezan a estar en desuso, sin embargo, es frecuente encontrarlas
+                instaladas en instalaciones antiguas. También se utiliza una categoría llamada 5e, que mejora 
+                algo las  capacidades de la categoría 5. Las categorías 6 (estándar ANSI/TIA/EIA-568-B.2-1) y
+                7 (categoría ISO/IEC 11801:2002 categoría 7/clase F) llegan a transmisiones de 250 y 600 MHz 
+                respectivamente. El estandar que define estas categorias es el TIA/EIA-568-B. Actualmente lo mas
+                frecuentes es instalar categoría 5e o 6. <br>
+                •Segunda clasificación: las clases. Cada clase especifica las distancias permitidas,  el ancho de banda conseguido y las aplicaciones para las que es útil en función de  estas características. Están detalladas las clases A a F. En la Tabla 2.2 se especifican  ejemplos que relacionan algunas clases con algunas categorías. Para las categorías  superiores los parámetros dependerán mucho del entorno de operación.
+            </p>
         </section>
 
         <aside class="lateral" >
-            <div class="item">Elemento 1</div>
-            <div class="item">Elemento </div>
-            <div class="item">Elemento 1</div>
+            <div class="item"> <strong >Claves y consejos</strong> <br>La elección de un buen sistema  de cableado es de vital importancia en las instalaciones reales en  las que se producirá el fenómeno  de la comunicación. La inversión  estimada para cables en una  instalación es inferior al 10% del coste total. Sin embargo, está  comprobado que el 70% de los  fallos producidos en una red se  deben a defectos en el cableado.  Por tanto, merece la pena no  escatimar demasiado las inversiones que deban producirse en los  sistemas de transmisión </div>
+            <div class="item"> <strong >Truco</strong> <br> Es mucho más fácil instalar cable  UTP que STP debido a que STP,  al estar apantallado, es mucho  menos flexible, lo que a veces  dificulta el tendido del cable.  Además, las mallas protectoras  de los cables STP deben estar  conectadas a tierra, lo que multiplica el trabajo.</div>
+            <div class="item"> <strong >Investigacion</strong> <br>Las especificaciones sobre  cableados contienen una información técnica muy compleja  característica del diseño de  ingeniería. No obstante, conviene leer algunos documentos  sobre ellos para conocer qué  elementos tecnológicos contienen. Se sugiere leer las páginas  de Wikipedia relativas a las  siguientes voces: «Unshielded  Twisted Pair»», «Shielded Twisted  Pair», «TIA-568B», «Cable de  Categoría 6» y «Cable de Categoría 7». Pásate también por  la sede web de Lanshack <span><a href="http://www.lanshack.com">(http://www.lanshack.com)</a></span>, que es  un proveedor de sistemas de  cableado para inspeccionar el  catálogo de productos y hacerte  una idea de los precios de cada  componente. En  <span><a href="http://www.lanshack.com/cat5e-tutorial.aspx">http://www.lanshack.com/cat5e-tutorial.aspx</a></span>  tienes un tutorial muy completo, aunque en ingles, sobre los cables de categoria 5 y 6</div>
             
         </aside>
     </main>
