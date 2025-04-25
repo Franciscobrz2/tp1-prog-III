@@ -254,7 +254,7 @@ body:has(#check-menu:checked) {
 .hover-box:hover .imagen {
     opacity: 1;
 }
-  
+
 
 /* estilos para movil */
 @media (max-width: 768px) {
@@ -267,14 +267,13 @@ body:has(#check-menu:checked) {
         width: 100%;
         padding: 0.5rem;
     }
-  
     .lateral {
         flex-direction: column;
         width: 36rem;
         gap: 1rem;
     }
-  
-    .item {
+    
+    .item {  
         font-size: 1rem;
         padding: 0.5rem;
     }
@@ -291,7 +290,7 @@ body:has(#check-menu:checked) {
     }
   
     .hamburguesa {
-        font-size: 2rem;
+        font-size: 3rem;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
