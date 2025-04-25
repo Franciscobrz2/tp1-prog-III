@@ -20,6 +20,7 @@ body {
 .contenido{
     font-family:Verdana;
     font-size: x-large;
+    padding-left: 2rem
 }
 .contenedor-principal {
     flex: 1;
@@ -29,17 +30,21 @@ body {
     padding: 2rem;
 }
 section{
-padding: 1rem;
-width: 70%;
-display: flex;
-flex-direction: column;
+    padding: 1rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
 }
 /* elemento, elemento */
 header, footer{
+    width: 100%;
+    height: 10rem;
+    box-sizing: border-box;
     background-color: #454;
     color: #fff;
     text-align: center;
     padding: 1rem; 
+    font-size: 2rem;
 }
 
 .header{
@@ -48,6 +53,14 @@ header, footer{
     justify-content: start;
     gap: 1rem;
 }
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
 /* elemento elemento */
 .logo img {
     width: 50px;
@@ -88,30 +101,31 @@ header, footer{
 
 table {
   border-spacing:10px;
-  background-color: #b55239; 
-  padding: 10px;
+  background-color: #adabab; 
+  padding: 1%;
   
 }
 
 th, td {
-  background-color: #d36e25; 
-  color: white;
-  border: 2px solid #cc5b39d3; 
-  padding: 20px;
+  background-color: #ded1c7; 
+  color: black; 
+  padding: 1rem;
   text-align: center;
   font-family: Verdana, Arial, sans-serif;
   box-shadow: inset 0 0 5px #a6452d, 2px 2px 20px rgba(54, 209, 158, 0.3); 
-  transition: transform 0.5s;
+  transition:transform 0.2s;
 }
 
 td:hover {
   transform: scale(1.05); 
   background-color: #44c22b;
+  color: white;
 }
 
 .derecha:hover{
     transform: scale(1.05); 
-    background-color: #a50e16;
+    background-color: #47968c;
+    color: white;
 }
 
 #menu-toggle {
@@ -134,17 +148,21 @@ td:hover {
 .menu-nav {
     position: fixed;
     top: 0;
-    left: -250px;
-    width: 200px;
+    left: -116rem;
+    width: 30%;
     height: 100%;
-    background-color: #444;
-    color: #fff;
-    padding: 2rem 1rem;
+    background-color: #adabab;
+    padding: 0%;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     transition: left 0.3s ease;
     z-index: 1001; 
+    background: radial-gradient(
+        circle at 50% 100%,
+        rgb(138, 152, 138) 3%,
+        #688 30%,
+        #a8adb0 62%,
+        #adabab 85%    ) ;
 }
 /* son elementos hermanos ya que tienen el mismo padre y esta posterior a menu-nav(antes) */
 #check-menu:checked ~ .menu-nav {
@@ -182,3 +200,68 @@ body:has(#check-menu:checked) {
 #list{
     color: white;
 }
+
+.tabla-nav{
+    background-color:transparent;
+    padding: -1%;
+   
+}
+
+.datos:hover{
+    transform: scale(1.05);
+    background-color: white;
+}
+
+/* estilos para movil */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column;
+        padding: 1rem;
+    }
+  
+    section {
+        width: 100%;
+        padding: 0.5rem;
+    }
+  
+    .lateral {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+  
+    .item {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+  
+    .contenido {
+        font-size: large;
+    }
+  
+    .menu-nav {
+        width: 26%; 
+    }
+  
+    .hamburguesa {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+  
+    table, th, td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+  
+    .tabla-nav {
+        overflow-x: auto;
+    }
+  
+    header, footer {
+        width: 37rem;
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+  }
+  
