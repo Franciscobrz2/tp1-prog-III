@@ -7,10 +7,79 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1 style="height: 10%; margin: 2rem;">Acerca de</h1>
-    <a href="index.html" ><ol style="margin-left: 3rem;"> <li>Inicio</li></ol></a>
-    <div style="width: 200px; height: 60px; overflow: auto; margin: 2rem;">
-        <p><ol>>Hola mundo! mi nombre es Francisco soy programador este proyecto es con html y css</ol></p>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="image.png" alt="image">
+            </div>
+            <h1>Página estática vs Página dinamica</h1>
+        </div>
+    </header>
+    <h2 style="height: 10%; margin: 2rem;">Acerca de</h2>
+    <div class="inicio">
+        <div class="logo" style="padding-left: 1rem;">
+            <img src="image.png" alt="image">
+        </div>
+        <a href="index.html" ><ol style="padding: 1rem;"> <li>Inicio</li></ol></a>
     </div>
+   
+    <section class="contenido">
+        <div style="width: 20rem; height: 5rem; overflow: auto; margin: 2rem;">
+            <p><ol><strong> >Hola mundo! mi nombre es Francisco soy programador y estoy desarrollando una pagina estatica, en la cual estoy empleando paginas multiples con solo html y css.</strong></ol></p>
+        </div>
+        <table>
+            <tr>
+                <th>Aspecto</th>
+                <th>Página Estática</th>
+                <th>Página Dinámica</th>
+            </tr>
+            <tr>
+                <td><strong>Definición</strong></td>
+                <td>Contenido fijo que no cambia a menos que se edite manualmente el código.</td>
+                <td class="derecha">Contenido que cambia automáticamente según interacciones del usuario o datos externos.</td>
+            </tr>
+            <tr>
+                <td><strong>Interactividad</strong></td>
+                <td>Baja o nula. No responde a acciones del usuario más allá de navegación básica.</td>
+                <td class="derecha">Alta. Responde a entradas del usuario, actualiza contenido en tiempo real.</td>
+            </tr>
+            <tr>
+                <td><strong>Velocidad de Carga</strong></td>
+                <td>Rápida, ya que el contenido está pregenerado y no requiere procesamiento del servidor.</td>
+                <td class="derecha">Más lenta, debido al procesamiento en el servidor o cliente para generar contenido.</td>
+            </tr>
+            <tr>
+                <td><strong>Mantenimiento</strong></td>
+                <td>Fácil para sitios pequeños, pero difícil de escalar para actualizaciones frecuentes.</td>
+                <td class="derecha">Más complejo, pero ideal para sitios que requieren actualizaciones constantes.</td>
+            </tr>
+            <tr>
+                <td><strong>Ejemplos de Uso</strong></td>
+                <td>Portafolios, páginas informativas, landing pages.</td>
+                <td class="derecha">Tiendas en línea, redes sociales, blogs con comentarios, aplicaciones web.</td>
+            </tr>
+            <tr>
+                <td><strong>Almacenamiento de Datos</strong></td>
+                <td>No requiere base de datos. Contenido almacenado en archivos HTML.</td>
+                <td class="derecha">Usa bases de datos (SQL, NoSQL) para almacenar y recuperar datos dinámicos.</td>
+            </tr>
+            <tr>
+                <td><strong>SEO</strong></td>
+                <td>Bueno para contenido fijo, pero limitado para actualizaciones frecuentes.</td>
+                <td class="derecha">Mejor para contenido actualizado, pero requiere optimización técnica.</td>
+            </tr>
+            <tr>
+                <td><strong>Costo de Desarrollo</strong></td>
+                <td>Bajo, ya que requiere menos infraestructura y herramientas.</td>
+                <td class="derecha">Más alto, debido a la necesidad de servidores, bases de datos y frameworks.</td>
+            </tr>
+            <tr>
+                <td><strong>Escalabilidad</strong></td>
+                <td>Limitada. Cambios masivos requieren edición manual de múltiples archivos.</td>
+                <td class="derecha">Alta. Los sistemas de gestión de contenido (CMS) y frameworks facilitan la escalabilidad.</td>
+            </tr>
+        </table>
+        
+    </section>
 </body>
 </html>
