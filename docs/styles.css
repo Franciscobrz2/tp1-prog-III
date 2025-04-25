@@ -207,9 +207,22 @@ body:has(#check-menu:checked) {
    
 }
 
-.datos:hover{
-    transform: scale(1.05);
-    background-color: white;
+.datos a:hover{
+    transform: scale(1.1) ;
+    height: 7rem;
+    text-align: center;
+
+}
+
+.datos a {
+    display: block;      
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 200%;
+    color: black;
+   
 }
 
 /* estilos para movil */
@@ -226,7 +239,7 @@ body:has(#check-menu:checked) {
   
     .lateral {
         flex-direction: column;
-        width: 100%;
+        width: 36rem;
         gap: 1rem;
     }
   
@@ -238,9 +251,12 @@ body:has(#check-menu:checked) {
     .contenido {
         font-size: large;
     }
+    .contenido, p{
+        width:33rem ;
+    }
   
     .menu-nav {
-        width: 26%; 
+        width: 40%; 
     }
   
     .hamburguesa {
@@ -254,7 +270,7 @@ body:has(#check-menu:checked) {
         padding: 0.5rem;
     }
   
-    .tabla-nav {
+    .tabla-nav, th {
         overflow-x: auto;
     }
   
